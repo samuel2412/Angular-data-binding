@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding';
+  valor: number = 0;
+  deletarCiclo: boolean = false;
+
+  mudarValor(){
+    this.valor = Math.floor(Math.random() * 10) + 1 ;
+  }
+  destruirCiclo(){
+    this.deletarCiclo = true;
+  }
 }
